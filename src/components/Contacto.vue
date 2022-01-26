@@ -1,5 +1,5 @@
 <template>
-<section class="contacto">
+<section class="contacto" id="contacto">
     <div class="container">
         <div class="row">
             <div class="col-xl-6">
@@ -14,10 +14,10 @@
                     </div>
             </div>
             <div class="col-xl-6">
-                <form action="" class="formulario">
-                    <input type="text" placeholder="Nombre y apellidos">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Escribe un mensaje"></textarea>
-                    <input type="email" placeholder="Correo electrónico">
+                <form action="https://formsubmit.co/felipe_v_spd.com" method="POST" class="formulario">
+                    <input type="text" name="name" required placeholder="Nombre y apellidos">
+                    <textarea name="message" required cols="30" rows="10" placeholder="Escribe un mensaje"></textarea>
+                    <input name="email" type="email" placeholder="Correo electrónico">
                     <button class="boton-form" type="submit">Enviar</button>
                 </form>
             </div>
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import Sections from '@/components/Sections.vue'
+import Sections from '@/components/SectionsComponents/Sections.vue'
 export default {
     name: 'Contacto',
     data() {
@@ -77,7 +77,7 @@ export default {
 .formulario button{
     border: none;
     background-color: #23272F;
-        display: block;
+    display: block;
     width: 70%;
     margin-top: 1rem;
     padding: 0.8rem;
@@ -85,7 +85,7 @@ export default {
     border-radius: 0.8rem;
 }
 /* Inicio MediaQueries */
-@media screen and (max-width:700px){
+@media screen and (max-width:1024px){
     .formulario{
         text-align: center;
     }

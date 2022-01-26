@@ -1,8 +1,8 @@
 <template>
-  <section class="servicios">
+  <section class="seccion" id="servicios">
       <div class="container">
           <div class="row">
-                <Sections titulo="Servicios" contenido="demdemdeomdeomdeomdoemdomed"/>
+                <Sections titulo="Servicios" contenido="Nuestros servicios se diferencian por la atención personalizada que le brindamos a cada uno de nuestros clientes, nos enfocamos en cumplir los objetivos y dar más allá de los resultados esperados."/>
                 <div v-for="servicio in servicios" :key="servicio.id" class="col-xl-4">
                 <div class="cards" style="width: 18rem; margin-top: 1rem;">
                 <div class="imagen-card">
@@ -14,32 +14,31 @@
               </div>
                 </div>
                 </div>
-         
           </div>
       </div>
   </section>
 </template>
 
 <script>
-import Sections from '@/components/Sections.vue'
+import Sections from '@/components/SectionsComponents/Sections.vue'
 export default {
     data() {
         return {
             servicios:{
                 servicio1:{
-                    imagen:'bombillo.svg',
+                    imagen:'bombillo.png',
                     titulo:'Gestión de talento humano',
-                    contenido:'Connection to the API of YouTube to access videos from “Gentleman Programming.”',
+                    contenido:'El objetivo de la gestión de Recursos Humanos es que la empresa cuente con el personal más apto y calificado, que sean bien remunerados',
                 },
                 servicio2:{
-                    imagen:'search.svg',
-                    titulo:'Búsqueda de empleo',
-                    contenido:'Connection to the API of YouTube to access videos from “Gentleman Programming.”',
+                    imagen:'search.png',
+                    titulo:'Búsqueda de empleo en cualquier lugar',
+                    contenido:'Te ayudamos a conectar con empresas que buscan personal calificado y que estén dispuestas a contratar a los mejores trabajadores del mundo',
                 },
                 servicio3:{
-                    imagen:'people.svg',
+                    imagen:'people.png',
                     titulo:'Asesoría estratégica empresarial',
-                    contenido:'Connection to the API of YouTube to access videos from “Gentleman Programming.”',
+                    contenido:'Consiste en aprovechar las novedades en el entorno empresarial para beneficiar a la empresa,Para obtener los mejores beneficios en la empresa',
                 },
             }
         }
@@ -51,19 +50,19 @@ components:{
 </script>
 
 <style>
-.servicios{
-    height: auto;
-}
-
 .imagen-card{
     text-align: center;
 }
 .imagen-card img{
-    width: 5rem;
+    width: 9rem;
 }
 .card-title{
     text-align: center;
     color: #ffff;
+}
+.card-title:first-child{
+      font-family: 'GardeGothic-Bold';
+
 }
 .cards{
     padding:1rem;
@@ -80,7 +79,7 @@ components:{
 }
 
 /* Inicio sección MediaQueries */
-@media screen and (max-width:700px){
+@media screen and (max-width:1024px){
     .cards{
         margin: auto;
     }

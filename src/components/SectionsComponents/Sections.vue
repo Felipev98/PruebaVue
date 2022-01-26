@@ -18,11 +18,14 @@ export default {
             type:String,
         },
     },
-
 }
 </script>
 
 <style>
+.titulo h2{
+      font-family: 'GardeGothic-Bold';
+
+}
 .titulo{
     color: #BFBFBF;
 }

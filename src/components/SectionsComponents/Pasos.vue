@@ -17,7 +17,7 @@ export default {
     name: 'Pasos',
     props:{
         numero:{
-            type:Number,
+            type:String,
         },
         titulopasos:{
             type:String,
@@ -48,8 +48,9 @@ export default {
     border-radius: 50%;
     color: white;
 }
+
 /*  Inicio MediaQueries  */
-@media screen and (max-width:700px){
+@media screen and (max-width:1024px){
     .numero h2{
         margin: auto;
     }
@@ -57,4 +58,5 @@ export default {
         text-align: center;
     }
 }
+
 </style>

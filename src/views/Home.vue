@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
+import Navbar from '@/components/SectionsComponents/Navbar.vue'
 import Hero from '@/components/Hero.vue'
 import Empleo from '@/components/Empleo.vue'
 import Talento from '@/components/Talento.vue'
@@ -41,9 +41,16 @@ export default {
   background-position: center;
   background-size: cover;
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:1024px){
     .seccion-contacto{
         height: auto;
     }
+}
+/* Pantallas extrageande */
+
+@media screen and (min-width:1800px){
+  .seccion-contacto{
+    height: 57rem;
+  }
 }
 </style>

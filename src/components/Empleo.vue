@@ -1,9 +1,9 @@
 <template>
-  <section class="empleo">
+  <section class="seccion" id="empleo">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-empleo">
-                <Sections titulo="Búsqueda de empleo" contenido="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. "/>
+                <Sections titulo="Búsqueda de empleo" contenido="La búsqueda de empleo en una economía incierta es bastante difícil. Agregue los temores por el coronavirus, las cuarentenas domiciliarias y la paralización en las contrataciones en muchas compañías.Millones de personas están compitiendo repentinamente por un grupo reducido de empleos, con más de 3.8 millones de trabajadores despedidos que solicitaron beneficios de desempleo solo la semana pasada, la cifra se ha elevado a 30.3 millones en las últimas seis semanas. "/>
                     </div>
                     <div class="col-xl-6">
                         <div class="imagen">
@@ -19,9 +19,8 @@
       </div>
   </section>
 </template>
-
 <script>
-import Sections from '@/components/Sections.vue'
+import Sections from '@/components/SectionsComponents/Sections.vue'
 export default {
     name:'Empleo',
     data() {
@@ -37,10 +36,7 @@ export default {
 </script>
 
 <style>
-.empleo{
-    height: auto;
-    padding-top: 4rem;
-}
+
 .imagen img{
     width: 25rem;
 }
@@ -62,6 +58,8 @@ backdrop-filter: blur(10px);
 }
 .text-imagen{
     display: block;
+      font-family: 'GardeGothic-Bold';
+
 }
 .imagen-mensaje{
 width: 3rem;
@@ -92,7 +90,34 @@ width: 3rem;
         left: 2rem;
     }
 }
-
-
+/* Versión Tablet */
+@media screen and (min-width:701px) and (max-width:1023px){
+        .imagen{
+        text-align: center;
+    }
+    .imagen img{
+        width: 19rem;
+    }
+    .mensaje{
+        margin: auto;
+    }
+    .imagen-mensaje{
+        left: 12rem;
+    }
+}
+@media screen and (min-width:1023px) and (max-width:1024px){
+        .imagen{
+        text-align: center;
+    }
+    .imagen img{
+        width: 19rem;
+    }
+    .mensaje{
+        margin: auto;
+    }
+    .imagen-mensaje{
+        left: 19rem;
+    }
+}
 /* Final MediaQueries */
 </style>
