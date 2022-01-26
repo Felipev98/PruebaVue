@@ -1,6 +1,21 @@
-# pruebatecnicavue
+# Prueba Técnica Vue
 
-## Project setup
+_Aplicación CRUD que permite crear,leer,editar y eliminar tareas. La aplicación contiene los siguientes campos:_
+* Titulo
+* Descripción
+* Comentario
+* Estado(Completado/Pendiente)
+
+## Construido con 🛠️
+
+_El siguiente desafio fue contruido con las siguientes herramientas:_
+
+* Vue.js - El framework web usado
+* Vuex - Utilizado para el manejo de estados de la aplicación
+* Vuetify - Empleado para los estilos de la aplicación
+* SwwetAlert2 - Empleado para las notificaciones
+## Despliegue 📦
+
 ```
 npm install
 ```
@@ -15,5 +30,3 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
