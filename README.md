@@ -18,9 +18,17 @@ _El siguiente desafio fue contruido con las siguientes herramientas:_
 * BoostrapVue - Utilizado para la construcción de Interfaz
 * Gsap - Empleado para la animación de la web
 
+## Secciones de la web 👨‍💻
+* Búsqueda de empleo
+* Búsqueda de talento
+* Servicios
+* Contacto
+
 ## Plus 📚
-* Implementar PWA para atraer tener más alcance de usuarios
+* Implementar PWA para  tener más alcance de usuarios
 * Emplear Nuxt para mejorar el SEO de la landing page
+
+
 
 ## Despliegue 📦
 
@@ -33,8 +41,12 @@ npm install
 npm run serve
 ```
 
+
 ### Compiles and minifies for production
 ```
 npm run build
 ```
+
+### Demo
+https://pruebatecnicavueee.netlify.app/
 
